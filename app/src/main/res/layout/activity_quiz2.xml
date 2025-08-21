@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Top Image Centered -->
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/quiz_time"
+        android:contentDescription="Quiz Image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Question Number aligned left -->
+    <TextView
+        android:id="@+id/questionNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:text="Question 1/10"
+        android:fontFamily="@font/agbalumo_regular"
+        android:textSize="24sp"
+        android:textColor="#492A2A" />
+
+    <!-- Timer aligned right on the same row -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/questionNumberTextView"
+        android:layout_alignParentEnd="true"
+        android:text="0:00"
+        android:fontFamily="@font/aleo_regular"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#492A2A" />
+
+    <!-- Divider below Question Number & Timer -->
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/questionNumberTextView"
+        android:layout_marginTop="8dp"
+        android:background="#BDBDBD" />
+
+    <!-- Question Text Below Divider -->
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerView"
+        android:layout_marginTop="15dp"
+        android:text="Here goes the question?"
+        android:fontFamily="@font/aleo_regular"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#492A2A" />
+
+    <!-- Options Container -->
+    <LinearLayout
+        android:id="@+id/optionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle"
+        android:padding="8dp" />
+
+    <!-- Next Button at the Bottom -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#EBE4E4"
+        android:backgroundTint="#492A2A"
+        android:fontFamily="@font/aleo_regular"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Braintro</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_restart">Restart</string>
+    <string name="btn_share">Share</string>
+</resources>

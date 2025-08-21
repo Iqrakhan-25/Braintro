@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="top|center_horizontal"
+    android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:id="@+id/resultHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Result"
+        android:textSize="32sp"
+        android:textColor="#492A2A"
+        android:fontFamily="@font/agbalumo_regular"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/result_card"
+        android:elevation="8dp"
+        android:gravity="center_horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/confettiAnimationView"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            app:lottie_fileName="Confetti.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/trophyImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_trophy"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/congratulationsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations, User!"
+            android:textSize="24sp"
+            android:textColor="#492A2A"
+            android:fontFamily="@font/agbalumo_regular"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Score:"
+            android:textSize="20sp"
+            android:textColor="#492A2A"
+            android:fontFamily="@font/aleo_regular"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0/10"
+            android:textColor="#492A2A"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/aleo_regular"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/scoreMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Great job!"
+            android:textColor="#492A2A"
+            android:fontFamily="@font/aleo_regular"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Only Restart Button -->
+        <Button
+            android:id="@+id/restartButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            android:fontFamily="@font/aleo_regular"
+            android:textStyle="bold"
+            android:backgroundTint="#492A2A" />
+
+    </LinearLayout>
+</LinearLayout>

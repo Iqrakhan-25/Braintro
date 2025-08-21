@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_gray">#F5F5F5</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_blue">#E3F2FD</color>
+    <color name="green">#4CAF50</color>
+    <color name="light_green">#E8F5E9</color>
+    <color name="red">#F44336</color>
+    <color name="purple">#6200EE</color>
+    <!-- res/values/colors.xml -->
+    <color name="trophyGold">#FFC107</color>
+    <!-- res/values/colors.xml -->
+    <color name="primary">#9C27B0</color>
+    <color name="light_red">#FFEBEE</color>
+    <!-- Basic colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <!-- For Material theme placeholders -->
+    <color name="md_theme_background">#FFFFFF</color>
+</resources>
